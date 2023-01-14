@@ -1,10 +1,10 @@
 import cv2
 
 # Load the video
-cap = cv2.VideoCapture("C:\\Users\\enoobis\\Desktop\\body\\vid.mp4")
+cap = cv2.VideoCapture("input.mp4")
 
 # Create the face classifier
-face_classifier = cv2.CascadeClassifier('C:\\Users\\enoobis\\Desktop\\body\\haarcascade_frontalface_default.xml')
+face_classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 # Get the video frames per second (fps) and frame size
 fps = int(cap.get(cv2.CAP_PROP_FPS))
